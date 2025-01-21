@@ -1,0 +1,154 @@
+.banner {
+    width: 90%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("/src/assets/background.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    height: 100vh;
+    margin-bottom: 2%;
+    box-shadow: 0 2px 4px rgb(247, 220, 220), 0 10px 20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: flex-start;
+}
+
+.banner-content {
+    max-width: 40%;
+    text-align: left;
+    margin-left: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: #333;
+    line-height: 1.4;
+    font-family: var(--font-Bowlby-One);
+    display: block;
+    text-align: center;
+}
+
+.highlight {
+    color: #e41e19;
+    /* Rojo destacado */
+}
+
+.subtext {
+    color: black;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    font-family: var(--font-OpenSans);
+    text-align: center;
+    margin-bottom: 8%;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    color: black;
+    font-size: 1rem;
+    font-family: var(--font-OpenSans);
+    font-weight: 600;
+    text-align: center;
+}
+
+.features li {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #176a9e;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 50%;
+    font-family: var(--font-OpenSans);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .banner {
+        width: 95%;
+        background-position: center top;
+        background-size: cover;
+        height: auto;
+        padding: 20px;
+    }
+
+    .banner-content {
+        max-width: 40%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+    .subtext{
+        font-size: 0.6rem;
+    }
+    .features{
+        font-size: 0.7rem;
+        text-align: left;
+    }
+    .btn {
+        font-size: 0.7rem;
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner{
+        height: 60vh;
+        background-position: 30% 0%;
+    }
+    .banner-content{
+        max-width: 45%;
+    }
+    h1{
+        font-size: 1.4rem;
+    }
+    .subtext{
+        font-size: 0.8rem;
+    
+    }
+    .features{
+        font-size: 0.6rem;
+        margin: 4%;
+    } 
+    .features li{
+        margin-bottom: 4px;
+    }
+    .btn{
+        font-size: 0.6rem;
+        padding: 5%;
+        width: 60%;
+        margin-top: 10%;
+    }
+  }
+
+  @media (max-width: 340px){
+    .banner-content{
+        max-width: 50%;
+    }
+    h1{
+        font-size: 1rem;
+    }
+  }

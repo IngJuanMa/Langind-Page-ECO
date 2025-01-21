@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bowlby+One&family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Prata&family=Raleway:ital,wght@0,100..900;1,100..900&family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bowlby+One&family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Prata&family=Raleway:ital,wght@0,100..900;1,100..900&family=Slabo+27px&display=swap');
+
+
+:root {
+    /* Variables de fuentes */
+    --font-Bowlby-One: "Bowlby One", serif;
+    --font-OpenSans: 'Open Sans', sans-serif;
+}
+
+/* Reset de márgenes, rellenos y bordes */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Establece una tipografía básica */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background: rgb(0, 163, 255);
+    background: linear-gradient(83deg, rgba(0, 163, 255, 1) 9%, rgba(23, 106, 158, 1) 68%);
+}
+
+/* Eliminamos los estilos por defecto de las listas */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Establecemos un tamaño base para los encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Enlaces sin subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Imágenes responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Eliminar bordes por defecto en elementos de formulario */
+input,
+select,
+textarea {
+    border: none;
+    outline: none;
+}
+
+/* Tabla con bordes colapsados */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Estilos básicos para botones */
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Evita los márgenes extraños de los elementos de los formularios */
+fieldset {
+    border: none;
+}
+
+/* Normalización para la visualización de las cajas de texto */
+textarea {
+    resize: vertical;
+}
+.seccionBan{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
