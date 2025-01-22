@@ -34,7 +34,7 @@ const Tarjetas = () => {
             </figure>
 
             <figure className="card">
-                <img className="card-icon" src="/img/nature.svg"></img>
+                <img className="card-icon" src="/img/savenature.svg"></img>
                 <h3 className="card-title">Naturaleza</h3>
                 <p className="card-description">Reducimos nuestro impacto ambiental</p>
             </figure>

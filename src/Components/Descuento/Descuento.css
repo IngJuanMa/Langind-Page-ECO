@@ -89,7 +89,7 @@
   
   .benefits-list li::before {
     content: "✔";
-    color: #0d6efd;
+    color: #176a9e;
     margin-right: 10px;
     font-weight: bold;
   }

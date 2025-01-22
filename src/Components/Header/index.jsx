@@ -14,7 +14,7 @@ const Header = () => {
                 <Link to="/productos" className="nav-link">PRODUCTOS</Link>
             </nav>
             <div className="contact">
-                <Link  to="https://wa.me/3204336996" className="contact-link" target="_blank" rel="noopener noreferrer">
+                <Link  to="https://wa.me/+57 3204336996" className="contact-link" target="_blank" rel="noopener noreferrer">
                     <img src="/img/whatsapp.svg" alt="WhatsApp" className="contact-icon" />
                     <span className="numero">+57 320 433 6996</span>
                 </Link>
