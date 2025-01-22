@@ -1,0 +1,103 @@
+/* Estilo general de la tarjeta */
+.discount-card {
+    display: flex;
+    width: 90%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgb(247, 220, 220), 0 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  
+  /* Imagen de la cabecera */
+  .card-header {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background-image: url(/img/fondodos.jpg);
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: contain;
+  }
+  
+  
+  /* Contenido del cuerpo */
+  .card-body {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    background-image: url(/img/fondocard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 1% 80%;
+  }
+  
+  .card-body h3 {
+    font-size: 1.5em;
+    color: #176a9e;
+    font-family: var(--font-Bowlby-One);
+  }
+  
+  .card-body p {
+    font-size: 1em;
+    line-height: 1.6;
+    font-family: var(--font-OpenSans);
+    width: 80%;
+  }
+  
+  /* Imagen del QR */
+  .qr-section {
+    margin-bottom: 2%;
+    margin-top: 2%;
+    display: flex;
+  }
+  
+  .qr-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 50px;
+  }
+  
+  
+  /* Lista de beneficios */
+  .benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 3%;
+    font-family: var(--font-OpenSans);
+  }
+  
+  .benefits-list li {
+    font-size: 1em;
+    line-height: 1.8;
+    display: flex;
+    align-items: center;
+  }
+  
+  .benefits-list li::before {
+    content: "✔";
+    color: #0d6efd;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px){
+    .discount-card{
+        flex-direction: column;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+  }

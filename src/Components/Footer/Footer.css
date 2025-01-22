@@ -1,0 +1,127 @@
+/* Footer general styles */
+.footer {
+    background-color: #176a9e;
+    color: #fff;
+    padding: 40px 20px;
+    
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-container > div {
+    flex: 1;
+    min-width: 250px;
+  }
+  .footer-contact,
+  .footer-links,
+  .footer-about,
+  .footer-socials,
+  .social-icons
+  {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .footer-contact h3,
+  .footer-links h3,
+  .footer-about h3,
+  .footer-socials h3,
+  .social-icons h3 
+  {
+    font-family: var(--font-OpenSans);
+    font-size: 1.2em;
+    font-weight: 800;
+  }
+
+  
+  .footer-about p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: var(--font-OpenSans);
+  }
+  
+  /* Footer links */
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 5px 0;
+    font-family: var(--font-OpenSans);
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #ffc107;
+  }
+  
+  /* Contact section */
+  .footer-contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-contact li {
+    margin: 5px 0;
+    font-size: 14px;
+    font-family: var(--font-OpenSans);
+  }
+  
+  /* Social icons */
+  .footer-socials .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .footer-socials img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+  }
+  
+  .footer-socials img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Bottom section */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+    font-family: var(--font-OpenSans);
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-container > div {
+      min-width: 100%;
+    }
+  }
+  

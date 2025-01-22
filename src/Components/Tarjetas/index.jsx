@@ -34,21 +34,21 @@ const Tarjetas = () => {
             </figure>
 
             <figure className="card">
-                <img className="card-icon" src="/img/cash.svg"></img>
-                <h3 className="card-title">Expert Team</h3>
-                <p className="card-description">Our highly trained professionals bring a wealth of experience.</p>
+                <img className="card-icon" src="/img/nature.svg"></img>
+                <h3 className="card-title">Naturaleza</h3>
+                <p className="card-description">Reducimos nuestro impacto ambiental</p>
             </figure>
 
             <figure className="card">
-                <img className="card-icon" src="/img/cash.svg"></img>
-                <h3 className="card-title">Expert Team</h3>
-                <p className="card-description">Our highly trained professionals bring a wealth of experience.</p>
+                <img className="card-icon" src="/img/map.svg"></img>
+                <h3 className="card-title">Industria local</h3>
+                <p className="card-description">Somos los únicos productores de Oporapa</p>
             </figure>
 
             <figure className="card">
-                <img className="card-icon" src="/img/cash.svg"></img>
-                <h3 className="card-title">Expert Team</h3>
-                <p className="card-description">Our highly trained professionals bring a wealth of experience.</p>
+                <img className="card-icon" src="/img/calidad.svg"></img>
+                <h3 className="card-title">Calidad</h3>
+                <p className="card-description">Brindamos una excelente calidad</p>
             </figure>
         </div>
     );

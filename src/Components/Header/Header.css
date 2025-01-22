@@ -1,5 +1,5 @@
 .header {
-    height: 12vh;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,12 +10,13 @@
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: bold; 
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 .logo-img {
     height: 50px;
     margin-left: 2%;
+    border-radius: 30px;
 }
 
 .nav {
@@ -78,7 +79,7 @@
 @media (max-width: 768px) {
 .header{
 
-    font-size: 0.8rem;
+    font-size: 0.8em;
 }
 .nav{
     display: flex;
@@ -93,7 +94,10 @@
     .header{
         display: flex;
         gap: 2px;
-        font-size: 0.5rem;
+        font-size: 0.5em;
+    }
+    .nav{
+        font-size: 1.5em;
     }
     .numero{
         display: none;

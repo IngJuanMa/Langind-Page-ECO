@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ".//Header.css"
 
 
@@ -8,15 +9,15 @@ const Header = () => {
                 <img src="/img/eco.jpeg " alt="Logo" className="logo-img" />
             </div>
             <nav className="nav">
-                <a href="#inicio" className="nav-link">INICIO</a>
-                <a href="#nosotros" className="nav-link">NOSOTROS</a>
-                <a href="#productos" className="nav-link">PRODUCTOS</a>
+                <Link to="/" className="nav-link">INICIO</Link>
+                <Link to="/Sapo" className="nav-link">NOSOTROS</Link>
+                <Link to="/productos" className="nav-link">PRODUCTOS</Link>
             </nav>
             <div className="contact">
-                <a href="https://wa.me/" className="contact-link" target="_blank" rel="noopener noreferrer">
+                <Link  to="https://wa.me/3204336996" className="contact-link" target="_blank" rel="noopener noreferrer">
                     <img src="/img/whatsapp.svg" alt="WhatsApp" className="contact-icon" />
-                    <span className="numero">+57 3204336996</span>
-                </a>
+                    <span className="numero">+57 320 433 6996</span>
+                </Link>
             </div>
         </header>
     )
