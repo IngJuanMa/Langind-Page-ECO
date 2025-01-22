@@ -1,0 +1,103 @@
+/* Contenedor de la tarjeta */
+.product-card {
+    background: linear-gradient(to bottom, rgba(250, 250, 250, 0) 90%, #f0f2f3),linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 253, 253, 0.6)),url("/img/fondocard.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--color-Azuloscuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 4px rgb(247, 220, 220), 0 10px 20px rgba(0, 0, 0, 0.4);
+    max-width: 100%;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    
+  }
+  
+  /* Imagen del producto */
+  .card-image img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 10%;
+    height: 28vh;
+  }
+  
+  /* Información del producto */
+  .card-info {
+    padding: 1%;
+    width: 99%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 30%;   
+  }
+  
+  .product-name {
+    font-size: 1.1em;
+    font-family: var(--font-OpenSans);
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 8px;
+    padding: 0 4%;
+  }
+  
+  .product-price {
+    font-size: 16px;
+    color: var(--color-Azuloscuro);
+    margin-bottom: 5px;
+    font-family: var(--font-OpenSans);
+    font-weight: bolder;
+  }
+  
+  .product-descrip {
+    font-size: 0.7em;
+    color: rgb(17, 17, 17);
+    font-family: var(--font-OpenSans);
+    padding: 0px 8px;
+  }
+
+  .button-section{
+    display: flex;
+    padding: 8% 0;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Botón */
+  .add-button {
+    background-color: var(--color-Azuloscuro);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .add-buttonA{
+    background-color: white;
+    color: var(--color-Azuloscuro);
+    border: 1px solid var(--color-Azuloscuro);
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .add-button:hover {
+    background-color: #ffffff;
+    color: var(--color-Azuloscuro);
+    border: 1px solid var(--color-Azuloscuro);
+  }
+  

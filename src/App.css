@@ -6,6 +6,8 @@
     /* Variables de fuentes */
     --font-Bowlby-One: "Bowlby One", serif;
     --font-OpenSans: 'Open Sans', sans-serif;
+    --color-Azuloscuro: #176a9e;
+    --color-Rojo:#e41e19;
 }
 
 /* Reset de márgenes, rellenos y bordes */
