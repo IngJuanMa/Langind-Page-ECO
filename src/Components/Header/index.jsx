@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header className="header">
             <div className="logo">
-                <img src="/src/assets/eco.jpeg " alt="Logo" className="logo-img" />
+                <img src="/img/eco.jpeg " alt="Logo" className="logo-img" />
             </div>
             <nav className="nav">
                 <a href="#inicio" className="nav-link">INICIO</a>
@@ -14,7 +14,7 @@ const Header = () => {
             </nav>
             <div className="contact">
                 <a href="https://wa.me/" className="contact-link" target="_blank" rel="noopener noreferrer">
-                    <img src="/src/assets/whatsapp.svg" alt="WhatsApp" className="contact-icon" />
+                    <img src="/img/whatsapp.svg" alt="WhatsApp" className="contact-icon" />
                     <span className="numero">+57 3204336996</span>
                 </a>
             </div>

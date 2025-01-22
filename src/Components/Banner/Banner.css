@@ -5,11 +5,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url("/src/assets/background.png") ;
+    background: url("/img/background.png") ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
-    height: 100vh;
+    height: 600px;
     margin-bottom: 2%;
     box-shadow: 0 2px 4px rgb(247, 220, 220), 0 10px 20px rgba(0, 0, 0, 0.4);
     display: flex;
