@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Banner from './Components/Banner'
@@ -13,6 +13,9 @@ import Carrito from './Components/Carrito'
 function App() {
 
   const carritoRef = useRef(null);
+  const [cartItems, setCartItems] = useState([]); // Estado del carrito
+  const [popupMessage, setPopupMessage] = useState(""); // Estado del popup
+  const [isPopupVisible, setIsPopupVisible] = useState(false); // Control de visibilidad del popup
 
   // Función para abrir el diálogo
   const openDialog = () => {
@@ -26,6 +29,25 @@ function App() {
     if (carritoRef.current) {
       carritoRef.current.close();
     }
+  };
+
+  // Función para agregar productos al carrito
+  const addToCart = (product) => {
+    setCartItems((prevItems) => [...prevItems, product]);
+
+    // Mostrar el mensaje emergente
+    setPopupMessage(`${product.name} agregado al carrito`);
+    setIsPopupVisible(true);
+
+    // Ocultar el popup después de 3 segundos
+    setTimeout(() => {
+      setIsPopupVisible(false);
+    }, 3000);
+  };
+
+  // Función para eliminar productos del carrito
+  const removeFromCart = (index) => {
+    setCartItems((prevItems) => prevItems.filter((_, i) => i !== index));
   };
 
 
@@ -47,8 +69,14 @@ function App() {
           } />
           <Route path='/Productos' element={
             <>
-              <ProductGrid onOpenDialog={openDialog} />
-              <Carrito carritoRef={carritoRef} onCloseDialog={closeDialog} />
+              <ProductGrid onOpenDialog={openDialog} onAddToCart={addToCart} />
+              <Carrito
+                carritoRef={carritoRef}
+                onCloseDialog={closeDialog}
+                cartItems={cartItems} 
+                onRemoveFromCart={removeFromCart}/>
+              {/* Popup de confirmación */}
+              {isPopupVisible && <div className="popup">{popupMessage}</div>}
             </>
           } />
 

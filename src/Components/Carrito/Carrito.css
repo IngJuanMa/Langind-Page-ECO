@@ -3,7 +3,7 @@ dialog {
     margin-left: 5%;
     margin-top: 1%;
     height: 100vh;
-    background-color: rgb(0, 163, 255, 0.9);
+    background-color: rgba(26, 32, 36, 0.9);
     border: none;
     border-radius: 30px;
     z-index: 9999;
@@ -33,3 +33,139 @@ dialog {
     margin-top: 2%;
 }
 
+.cart-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3%;
+    
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgb(247, 220, 220), 0 10px 20px rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    
+  }
+  
+  .cart-item-image {
+    width: 50%;
+    display: flex;
+    height: 50%;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cart-item-image img{
+    height: 90%;
+  }
+  
+  .cart-item-info {
+    flex: 1;
+    font-family: var(--font-OpenSans);
+  }
+
+  .cart-item-info h3,
+  .cart-item-info p,
+  .cart-item-info button {
+    margin: 5% 0;
+  }
+
+  .cart-item-info h3{
+    font-weight: 800;
+    
+  }
+  
+  .remove-button {
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .remove-button:hover {
+    background-color: #e60000;
+  }
+  
+  .titulocarrito {
+    font-family: var(--font-Bowlby-One);
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    padding: 1%;
+    border-bottom: 3px solid white;
+    color: white;
+    font-size: 2em;
+    background-color: var(--color-Azuloscuro);
+    border-radius: 12px;
+  }
+
+  .seccioncarritoproduct{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 95%;
+    margin-left: 2.5%;
+    height: 80vh;
+    box-sizing: border-box;
+    padding-top: 2%;
+  }
+  
+  .seccioncarritoproduct p{
+    font-family: var(--font-OpenSans);
+  }
+
+  .sectionformulario{
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 5%;
+    margin-top: 5%;
+    font-family: var(--font-OpenSans);
+  }
+  
+  .sectionformulario h3 {
+    margin-bottom: 10px;
+    color: white;
+    font-family: var(--font-OpenSans);
+    font-weight: 800;
+    text-align: center;
+  }
+  
+  .sectionformulario input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .whatsapp-button {
+    width: 60%;
+    padding: 10px;
+    background: linear-gradient(0deg, rgba(36,173,57,1) 0%, rgba(83,201,94,1) 66%);
+    color: white;
+    font-weight: 900;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--font-OpenSans);
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #09692c;
+  }
+  

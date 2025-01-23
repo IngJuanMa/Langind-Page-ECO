@@ -1,7 +1,9 @@
 
 import "./ProductCard.css";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, onAddToCart }) => {
+ 
+
     return (
         <div className="product-card">
             <div className="card-image">
@@ -13,8 +15,8 @@ const ProductCard = ({ product }) => {
                 <p className="product-descrip">{product.descripcion}</p>
             </div>
             <div className="button-section">
-                <p className="product-price">COP {product.price}</p>
-                <button className="add-button">Comprar</button>
+                <p className="product-price">$COP {product.price}</p>
+                <button className="add-button" onClick={() => onAddToCart(product)}>Comprar</button>
             </div>
         </div>
     );

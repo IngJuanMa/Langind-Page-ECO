@@ -14,7 +14,7 @@
     display: flex;
     justify-content: right;
     align-items: center;
-    padding: 10px 0;
+    padding: 20px 0;
     gap: 1%;
     font-family: var(--font-OpenSans);
     color: white;
@@ -24,14 +24,28 @@
 }
 
 .carrito{
-    padding: 1%;
+    padding: 8px;
     background-color: white;
-    border-radius: 23px;
+    border-radius: 30px;
     width: 4em;
     transition: all 0.3s ease;
+    border: none;
 }
 
 .carrito:hover{
-    background-color: #00a3ff;
+    background-color: #c3cbcf;
     transform: scale(1.1);
+}
+.tituloproduct{
+    color: white;
+    font-size: min(2.3em 15px);
+    border-bottom: 1px solid white;
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+}
+.presiona{
+    font-size:13px;
 }
