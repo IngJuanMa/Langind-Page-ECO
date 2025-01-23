@@ -2,10 +2,10 @@ dialog {
     width: 90%;
     margin-left: 5%;
     margin-top: 1%;
-    height: 100vh;
+    height: auto;
     background-color: rgba(26, 32, 36, 0.9);
     border: none;
-    border-radius: 30px;
+    border-radius: 10px;
     z-index: 9999;
     justify-content: center;
 }
@@ -108,8 +108,7 @@ dialog {
     padding: 1%;
     border-bottom: 3px solid white;
     color: white;
-    font-size: 2em;
-    background-color: var(--color-Azuloscuro);
+    font-size: 1.5em;
     border-radius: 12px;
   }
 

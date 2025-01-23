@@ -17,7 +17,7 @@ const Carrito = ({ carritoRef, onCloseDialog, cartItems, onRemoveFromCart }) => 
             .join("\n");
 
         const message = `Hola, me gustaría realizar el siguiente pedido:\n\n${productList}\n\nNombre: ${name}\nDirección: ${address}`;
-        const whatsappURL = `https://wa.me/3204336996?text=${encodeURIComponent(message)}`;
+        const whatsappURL = `https://wa.me/+573204336996?text=${encodeURIComponent(message)}`;
 
         window.open(whatsappURL, "_blank");
     };
