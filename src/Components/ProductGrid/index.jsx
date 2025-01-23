@@ -17,7 +17,7 @@ const ProductGrid = ({onOpenDialog, onAddToCart}) => {
         <>
             <h1 className="tituloproduct">Nuestro Productos</h1>
             <div className="carritoCompra">
-                <aside className="presiona">Presiona aquí para ver tu carrito ➔ </aside>
+                <aside className="presiona"> ⚠️ Presiona aquí para ver tus productos seleccionados y hacer tu pedido ➔ </aside>
                 <img src="/img/carrito.svg" className="carrito" onClick={onOpenDialog} alt="Carrito"></img>
             </div>
             <section className="product-grid">

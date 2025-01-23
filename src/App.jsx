@@ -9,6 +9,7 @@ import Tarjetas from './Components/Tarjetas'
 import NoFound from './Components/NoFound'
 import ProductGrid from './Components/ProductGrid'
 import Carrito from './Components/Carrito'
+import SobreNosotros from './Components/Nosotros'
 
 function App() {
 
@@ -73,13 +74,18 @@ function App() {
               <Carrito
                 carritoRef={carritoRef}
                 onCloseDialog={closeDialog}
-                cartItems={cartItems} 
-                onRemoveFromCart={removeFromCart}/>
+                cartItems={cartItems}
+                onRemoveFromCart={removeFromCart} />
               {/* Popup de confirmación */}
               {isPopupVisible && <div className="popup">{popupMessage}</div>}
             </>
           } />
 
+          <Route path='/Nosotros' element={
+            <>
+              <SobreNosotros />
+            </>
+          } />
           <Route path='*' element={
             <>
               <NoFound />

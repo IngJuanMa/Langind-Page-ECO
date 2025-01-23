@@ -40,7 +40,7 @@ dialog {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 3%;
-    
+    margin: 1% 0%;
   }
   
   .cart-item {
@@ -76,6 +76,7 @@ dialog {
   .cart-item-info p,
   .cart-item-info button {
     margin: 5% 0;
+    color: black;
   }
 
   .cart-item-info h3{
@@ -86,7 +87,7 @@ dialog {
   .remove-button {
     padding: 5px 10px;
     background-color: #ff4d4d;
-    color: white;
+    color: rgb(241, 241, 241);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -119,9 +120,6 @@ dialog {
     padding-top: 2%;
   }
   
-  .seccioncarritoproduct p{
-    font-family: var(--font-OpenSans);
-  }
 
   .sectionformulario{
     width: 90%;
@@ -162,5 +160,21 @@ dialog {
   
   .whatsapp-button:hover {
     background-color: #09692c;
+  }
+
+  .cart-total {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    color: white;
+    font-family: var(--font-OpenSans);
+  }
+  
+  .vacio{
+    color: rgb(8, 221, 8);
+    font-family: var(--font-OpenSans);
   }
   

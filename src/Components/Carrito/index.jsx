@@ -6,6 +6,10 @@ const Carrito = ({ carritoRef, onCloseDialog, cartItems, onRemoveFromCart }) => 
     const [name, setName] = useState("");
     const [address, setAddress] = useState("");
 
+    const calculateTotal = () => {
+        return cartItems.reduce((total, item) => total + parseFloat(item.price.replace(".", "")), 0);
+      };
+
     const handleWhatsAppOrder = () => {
         if (!name || !address) {
             alert("Por favor, completa tu nombre y dirección antes de enviar el pedido.");
@@ -16,7 +20,9 @@ const Carrito = ({ carritoRef, onCloseDialog, cartItems, onRemoveFromCart }) => 
             .map((item) => `${item.name} - COP ${item.price}`)
             .join("\n");
 
-        const message = `Hola, me gustaría realizar el siguiente pedido:\n\n${productList}\n\nNombre: ${name}\nDirección: ${address}`;
+            const total = calculateTotal();
+
+            const message = `Hola, me gustaría realizar el siguiente pedido:\n\n${productList}\n\nTotal: COP ${total.toLocaleString("es-CO")}\n\nNombre: ${name}\nDirección: ${address}`;
         const whatsappURL = `https://wa.me/+573204336996?text=${encodeURIComponent(message)}`;
 
         window.open(whatsappURL, "_blank");
@@ -31,8 +37,9 @@ const Carrito = ({ carritoRef, onCloseDialog, cartItems, onRemoveFromCart }) => 
                 <h2 className="titulocarrito">Tu Carrito</h2>
                 <section method="dialog" className="seccioncarritoproduct">
                     {cartItems.length === 0 ? (
-                        <p>El carrito está vacío.</p>
+                        <p className="vacio">El carrito está vacío, selecciona productos para realizar tu compra.</p>
                     ) : (
+                        <>
                         <ul className="cart-list">
                             {cartItems.map((item, index) => (
                                 <figure key={index} className="cart-item">
@@ -52,6 +59,10 @@ const Carrito = ({ carritoRef, onCloseDialog, cartItems, onRemoveFromCart }) => 
                                 </figure>
                             ))}
                         </ul>
+                        <div className="cart-total">
+                        <h3>Total: COP {calculateTotal().toLocaleString("es-CO")}</h3>
+                      </div>
+                      </>
                     )}
 
                     <div className="sectionformulario">

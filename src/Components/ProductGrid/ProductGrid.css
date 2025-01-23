@@ -27,7 +27,7 @@
     padding: 8px;
     background-color: white;
     border-radius: 30px;
-    width: 4em;
+    width: clamp(2rem, 4em, 5rem)   ;
     transition: all 0.3s ease;
     border: none;
 }
@@ -47,5 +47,6 @@
     text-align: center;
 }
 .presiona{
-    font-size:13px;
+    font-size:1em;
+    
 }
