@@ -26,8 +26,7 @@ dialog {
 
 .seccioncarrito img {
     width: 40px;
-    padding: 5px;
-    background-color: white;
+    background-color: transparent;
     border-radius: 50px;
     cursor: pointer;
     margin-top: 2%;
@@ -48,16 +47,16 @@ dialog {
     align-items: center;
     margin-bottom: 10px;
     padding: 10px;
-    border: 2px solid var(--color-Azuloscuro);
-    border-radius: 12px;
+    border-radius: 8px;
     background-color: rgba(233, 238, 241, 0.932);
   }
   
   .cart-item-image {
-    width: 40%;
+    width: 50%;
     display: flex;
-    height: 50%;
-    border-radius: 5px;
+    height: 70%;
+    border-right: 1px solid black;
+    filter: drop-shadow(3px 3px 3px black);
     margin-right: 10px;
     align-items: center;
     justify-content: center;
@@ -113,11 +112,13 @@ dialog {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 95%;
-    margin-left: 2.5%;
-    height: 80vh;
+    width: 85%;
+    margin-left: 7.5%;
+    height: 60vh;
     box-sizing: border-box;
     padding-top: 2%;
+    overflow-y: auto;
+    flex: 1;
   }
   
 
@@ -127,6 +128,8 @@ dialog {
     padding-bottom: 5%;
     margin-top: 5%;
     font-family: var(--font-OpenSans);
+    justify-content: center;
+    align-items: center;
   }
   
   .sectionformulario h3 {
@@ -156,6 +159,7 @@ dialog {
     border-radius: 5px;
     cursor: pointer;
     font-family: var(--font-OpenSans);
+    margin-left: 20%;
   }
   
   .whatsapp-button:hover {
@@ -171,6 +175,7 @@ dialog {
     padding-top: 10px;
     color: white;
     font-family: var(--font-OpenSans);
+    text-align: center;
   }
   
   .vacio{

@@ -1,36 +1,36 @@
 import React from "react";
 import "./Nosotros.css";
+import Carrusel from "../Carrusel";
 
 const founders = [
     {
         id: 1,
-        name: "Alan Smith",
+        name: "Andrés Felipe López",
         position: "CEO & Fundador",
-        email: "alan.smith@beclean.com",
-        image: "/founders/alan-smith.png", // Cambia según tu estructura
-        joinedDate: "Jan/23",
-        expiryDate: "Jan/24",
+        email: "felipelopex@gmail.com",
+        celu: "321 678 4567"
     },
     {
         id: 2,
-        name: "Jane Doe",
-        position: "Directora de Marketing",
-        email: "jane.doe@beclean.com",
-        image: "/founders/jane-doe.png",
-        joinedDate: "Feb/23",
-        expiryDate: "Feb/24",
+        name: "Fabían López",
+        position: "Jefe de producción",
+        email: "fabiancho@gmail.com",
+        celu: "320 237 7858"
     },
     {
         id: 3,
-        name: "John Doe",
-        position: "Jefe de Operaciones",
-        email: "john.doe@beclean.com",
-        image: "/founders/john-doe.png",
-        joinedDate: "Mar/23",
-        expiryDate: "Mar/24",
+        name: "Santiago López",
+        position: "Jefe de Logística",
+        email: "santiagolopex@gmail.com",
+        celu: "326 487 9648"
     },
 ];
 
+const images = [
+    "/Fundadores/dos.jpeg",
+    "/Fundadores/uno.jpeg",
+    "/Fundadores/uno.jpeg"
+];
 const SobreNosotros = () => {
     return (
         <section className="sobre-nosotros">
@@ -42,8 +42,8 @@ const SobreNosotros = () => {
                 </div>
                 <img src="/img/eco.jpeg" />
             </header>
-            <div className="mision-vision">
-                <div className="card">
+            <section className="mision-vision">
+                <div className="cardmisi">
                     <h2>Misión</h2>
                     <p>
                         Nuestra misión es ofrecer productos de limpieza ecológicos que
@@ -51,29 +51,29 @@ const SobreNosotros = () => {
                         clientes.
                     </p>
                 </div>
-                <div className="card">
+                <div className="cardmisi">
                     <h2>Visión</h2>
                     <p>
                         Ser la empresa líder en innovación y sostenibilidad en la industria
-                        de productos de limpieza para el hogar y empresas.
+                        de productos de limpieza para el hogar y empresas en el departamento del Huila.
                     </p>
                 </div>
-            </div>
+            </section>
 
-            <h2>Nuestros Fundadores</h2>
+            <Carrusel images={images} />
+
+            <h2 className="tituloFundad">Nuestros Fundadores</h2>
             <div className="founders">
                 {founders.map((founder) => (
                     <div key={founder.id} className="founder-card">
-                        <img src={founder.image} alt={founder.name} />
                         <h3>{founder.name}</h3>
                         <p>{founder.position}</p>
-                        <p>ID: {founder.id}</p>
                         <p>{founder.email}</p>
-                        <p>Joined Date: {founder.joinedDate}</p>
-                        <p>Expiry Date: {founder.expiryDate}</p>
+                        <p>{founder.celu}</p>
                     </div>
                 ))}
             </div>
+
         </section>
     );
 };

@@ -51,6 +51,7 @@ function App() {
     setCartItems((prevItems) => prevItems.filter((_, i) => i !== index));
   };
 
+ 
 
   return (
     <>
