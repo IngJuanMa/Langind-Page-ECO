@@ -79,40 +79,22 @@ h1 {
     font-weight: 500;
     transition: all 0.3s ease;
     text-align: center;
-    animation: glow 1.5s infinite alternate;
+    animation: pulse 1.5s infinite alternate;
 }
 
-@keyframes glow {
+
+  @keyframes pulse {
     0% {
-      box-shadow: 0 0 3px #00a3ff, 0 0 6px #00a3ff, 0 0 12px #00a3ff;
+      transform: scale(1);
     }
     50% {
-      box-shadow: 0 0 12px #00a3ff, 0 0 16px #00a3ff, 0 0 20px #00a3ff;
+      transform: scale(1.1);
     }
     100% {
-      box-shadow: 0 0 3px #00a3ff, 0 0 6px #00a3ff, 0 0 12px #00a3ff;
+      transform: scale(1);
     }
   }
   
-  .glow-button {
-    display: inline-block;
-    background-color: #006400;
-    color: white;
-    padding: 15px 30px;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    animation: glow 1.5s infinite alternate;
-    transition: transform 0.3s ease;
-  }
-  
-  .glow-button:hover {
-    transform: scale(1.1);
-    background-color: #004d00;
-  }
   
 
 .btn:hover {

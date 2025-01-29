@@ -6,7 +6,7 @@ const Descuento = () => {
             <div className="card-header">
             </div>
             <div className="card-body">
-                <h3>¡TRAE TUS ENVACES VACÍO!</h3>
+                <h3>¡TRAE TUS ENVACES VACÍOS!</h3>
                 <p>
                     Recibe un <strong>descuento especial</strong> en tu próxima compra al reciclar tus envases usados. Contribuye al cuidado del medio ambiente.
                 </p>
