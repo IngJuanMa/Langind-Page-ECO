@@ -35,9 +35,6 @@
     padding: 1%;
 }
 
-.nav-link:nth-child(1){
-    border-bottom: 2px solid white; 
-}
 
 .nav-link:hover {
     color: white;
@@ -45,6 +42,10 @@
     font-style: bold;
     border-bottom: 2px solid white;    
 }
+
+.nav-link.active {
+    border-bottom: 2px solid white;
+  }
 
 .contact {
     display: flex;

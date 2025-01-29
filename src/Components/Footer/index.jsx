@@ -14,8 +14,8 @@ const Footer = () => {
         <div className="footer-contact">
           <h3>Contáctanos</h3>  
           <ul>
-            <li>Cel: +57 320 433 6996</li>
-            <li>Email: contact@eco-clean.com</li>
+            <li>Cel: +57 310 810 9406</li>
+            <li>Email: ecoproducts@gmail.com</li>
             <li>Ubicación: Oporapa - Huila, Colombia</li>
           </ul>
         </div>  

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Banner.css"
 
 const Banner = () => {
@@ -14,7 +15,7 @@ const Banner = () => {
                     <li>✔ Industria oporapense</li>
                     <li>✔ Compromiso medio ambiental</li>
                 </ul>
-                <button className="btn">Ver Catálogo</button>
+                <Link to="/productos" className="btn" >Ver Productos</Link>
             </div>
         </section>
     )

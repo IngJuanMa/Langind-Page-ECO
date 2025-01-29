@@ -23,7 +23,7 @@ const Carrito = ({ carritoRef, onCloseDialog, cartItems, onRemoveFromCart }) => 
         const total = calculateTotal();
 
         const message = `Hola, me gustaría realizar el siguiente pedido:\n\n${productList}\n\nTotal: COP ${total.toLocaleString("es-CO")}\n\nNombre: ${name}\nDirección: ${address}`;
-        const whatsappURL = `https://wa.me/+573204336996?text=${encodeURIComponent(message)}`;
+        const whatsappURL = `https://wa.me/+573108109406?text=${encodeURIComponent(message)}`;
 
         window.open(whatsappURL, "_blank");
     };

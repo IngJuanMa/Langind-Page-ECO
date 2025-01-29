@@ -9,6 +9,10 @@
     margin: 20px auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 2px 4px rgb(247, 220, 220), 0 10px 20px rgba(0, 0, 0, 0.4);
+    background-image: url(/img/fondocard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 60%;
   }
   
   
@@ -33,10 +37,7 @@
     align-items: center;
     justify-content: center;
     color: #333;
-    background-image: url(/img/fondocard.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 1% 80%;
+    
   }
   
   .card-body h3 {
