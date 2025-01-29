@@ -48,5 +48,27 @@
 }
 .presiona{
     font-size:1em;
-    
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    animation: colorChange 3s infinite; /* Cambia de color cada 2 segundos */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
 }
+
+@keyframes colorChange {
+    0% {
+      color: rgb(255, 255, 255);
+    }
+    50% {
+      color: rgb(229, 255, 0);
+    }
+    100% {
+      color: rgb(255, 255, 255);
+    }
+  }
+  
+  
+  .presiona:hover {
+    transform: scale(0.5.0.5); /* Efecto de zoom al pasar el mouse */
+  }
