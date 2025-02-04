@@ -101,6 +101,7 @@
   
   /* Bottom section */
   .footer-bottom {
+    justify-content: center;
     text-align: center;
     margin-top: 20px;
     font-size: 12px;
@@ -111,6 +112,17 @@
   
   .footer-bottom p {
     margin: 0;
+  }
+
+  .infoDesing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .infoDesing img{
+    width: 20px;
   }
   
   /* Responsive design */

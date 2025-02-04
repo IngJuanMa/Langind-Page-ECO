@@ -33,6 +33,7 @@ function App() {
   };
 
   // Función para agregar productos al carrito
+
   const addToCart = (product) => {
     setCartItems((prevItems) => [...prevItems, product]);
 

@@ -11,7 +11,7 @@ const Descuento = () => {
                     Recibe un <strong>descuento especial</strong> en tu próxima compra al reciclar tus envases usados. Contribuye al cuidado del medio ambiente.
                 </p>
                 <div className="qr-section">
-                    <img src="/img/off.svg" alt="Código QR para descuento" className="qr-image" />
+                    <img src="/img/descuento.svg" alt="Código QR para descuento" className="qr-image" />
                     <img src="/img/ecoo.jpeg" alt="Código QR para descuento" className="qr-image" />
                 </div>
                 <ul className="benefits-list">

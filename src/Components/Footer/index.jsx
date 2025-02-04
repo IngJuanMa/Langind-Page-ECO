@@ -7,17 +7,17 @@ const Footer = () => {
         <div className="footer-about">
           <h3>Nosotros</h3>
           <p>
-          Estamos comprometidos a ofrecer productos de limpieza de la más alta calidad preservando la naturaleza.
+            Estamos comprometidos a ofrecer productos de limpieza de la más alta calidad preservando la naturaleza.
           </p>
         </div>
 
         <div className="footer-contact">
-          <h3>Contáctanos</h3>  
+          <h3>Contáctanos</h3>
           <ul>
             <li>Cel: +57 320 880 6139</li>
             <li>Ubicación: Oporapa - Huila, Colombia</li>
           </ul>
-        </div>  
+        </div>
 
         <div className="footer-socials">
           <h3>Síguenos</h3>
@@ -33,7 +33,11 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <p>&copy; 2025 Eco Clean. All Rights Reserved.</p>
-        <p>&copy; Desing By: IngJuanMa.</p>
+        <a href="https://www.linkedin.com/in/juan-manuel-castro-chavarro-9b0128262/" className="infoDesing">
+          <p>&copy; Desing By: IngJuanMa.</p>
+          <img src="/img/linkedin.svg" />
+        </a>
+
       </div>
     </footer>
   );
