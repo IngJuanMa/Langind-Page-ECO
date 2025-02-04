@@ -1,8 +1,14 @@
 import "./Descuento.css";
+import { motion } from "framer-motion";
 
 const Descuento = () => {
     return (
-        <div className="discount-card">
+        <motion.div className="discount-card"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+        >
+
             <div className="card-header">
             </div>
             <div className="card-body">
@@ -20,7 +26,7 @@ const Descuento = () => {
                     <li>Ayudas a reducir el impacto ambiental.</li>
                 </ul>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

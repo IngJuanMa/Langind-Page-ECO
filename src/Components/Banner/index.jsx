@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
 import "./Banner.css"
+import { motion } from "framer-motion";
 
 const Banner = () => {
     return (
-        <section className="banner">
+        <motion.section className="banner"
+        initial={{ scale: 0.8, opacity: 0 }} 
+                  animate={{ scale: 1, opacity: 1 }} 
+                  transition={{ duration: 0.5 }}>
+                    
             <div className="banner-content">
                 <h1>
                     TU ESPACIO ES <br></br><span className="highlight"> NUESTRO COMPROMISO</span>
@@ -17,7 +22,7 @@ const Banner = () => {
                 </ul>
                 <Link to="/productos" className="btn" >Ver Productos</Link>
             </div>
-        </section>
+        </motion.section>
     )
 }
 
