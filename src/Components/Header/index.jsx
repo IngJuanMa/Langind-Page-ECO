@@ -35,7 +35,7 @@ const Header = () => {
       </nav>
       <div className="contact">
         <Link
-          to="https://wa.me/+573108109406"
+          to="https://wa.me/+573208806139"
           className="contact-link"
           target="_blank"
           rel="noopener noreferrer"

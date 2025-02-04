@@ -1,10 +1,11 @@
 /* Grid para las tarjetas */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    width: 90%;
-    margin-left: 5%;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    width: 95%;
+    margin-left: 2.5%;
     margin-top: 5px;
     margin-bottom: 3%;
     background-color: transparent;
@@ -56,6 +57,23 @@
     transition: transform 0.3s ease-in-out;
 }
 
+.product-category {
+  margin-bottom: 32px;
+}
+
+.category-title {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 16px;
+  font-family: var(--font-OpenSans);
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid white;
+  width: 80%;
+  margin-left: 10%;
+}
+
+
 @keyframes colorChange {
     0% {
       color: rgb(255, 255, 255);
@@ -71,4 +89,16 @@
   
   .presiona:hover {
     transform: scale(0.5.0.5); /* Efecto de zoom al pasar el mouse */
+  }
+
+  @media (min-width: 768px){
+    .product-grid{
+      grid-template-columns: repeat(3,1fr);
+    }
+  }
+
+  @media (min-width: 1024px){
+    .product-grid{
+      grid-template-columns: repeat(5,1fr);
+    }
   }
